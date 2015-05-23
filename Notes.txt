@@ -1,0 +1,39 @@
+Servers connect to clients and servers
+
+A client connects to a server via socketry
+
+A client has a username (len <9 characters)
+
+All servers must have: Client hostname, client
+username, and the serverto which they are 
+connected
+
+Operators (perform network maintnence)
+
+Operators can: Disconnect/reconnect servers,
+boot users, etc.
+
+Channel is a named group of one or more clients
+whichall recieve messages addressed to said channel
+
+Created on first client join, destroyed on last client
+exit
+
+Channel referencable by any client
+
+Channels identified by strings beginning with # or &,
+Up to 200 characters long, no spaces, ^G, or comma
+
+Distributed channels: known to all servers in the
+network, marked by &, various modes.
+
+New channel created or old one joined by JOINing
+
+User becomes operator upon channel creation.
+
+Channel mode determines JOIN acceptance
+
+Invite-only (+i) only joinable by invite (duh)
+
+User may join as many channels as desired
+

@@ -24,3 +24,5 @@ class BaseIRCHandler(SocketServer.StreamRequestHandler):
     # The format is multiple whitespace-separated strings,
     # where each string is of the form name[/version].
     server_version = "BaseIRC/" + __version__
+    def handle(self):
+        pass
